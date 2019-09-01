@@ -30,7 +30,11 @@ module.exports = {
 
   // Before creating a value.
   // Fired before an `insert` query.
-  // beforeCreate: async (model) => {},
+  // beforeCreate: async (model) => {
+  //   console.log('xmodel', model);
+  //   // Send 201 `created`
+  //   strapi.emitToAllUsers(model);
+  // },
 
   // After creating a value.
   // Fired after an `insert` query.
